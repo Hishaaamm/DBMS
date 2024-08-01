@@ -1,0 +1,131 @@
+{% extends 'layout.html' %} {% block title %} Home {% endblock title %} {% block
+body %}
+
+<div class="open">
+  <h1 class="mainheading">Welcome to GTMS</h1>
+  <p class="mainpara">
+    a dynamic platform designed to revolutionize the way sports enthusiasts
+    connect, organize, and engage in recreational activities!
+  </p>
+  <div class="cont1">
+    <a class="loginbtn1" href="{{url_for('login')}}">Login</a>
+    <a class="loginbtn2" href="{{url_for('register')}}">Signup</a>
+  </div>
+</div>
+<br />
+<div class="about" id="about">
+  <h3>About</h3>
+  <p>
+    ------------------------------------------------------------------------------------------------------------------------
+  </p>
+  <p class="aboutpara">
+    At <span class="aboutspan">PlayQonnect</span>, we are passionate about
+    cultivating a thriving community that celebrates the joy of sports and
+    embraces the beauty of outdoor activities. Recognizing the profound impact
+    of sports on physical health, mental well-being, and social connectivity, we
+    have developed a comprehensive platform that serves as the ultimate
+    destination for sports enthusiasts of all levels. Our platform isn't just a
+    website it's a vibrant ecosystem where individuals come together to explore
+    their sporting passions, forge meaningful connections, and embark on
+    exciting adventures. Whether you're a seasoned athlete, a weekend warrior,
+    or someone just beginning their fitness journey, there's a place for you
+    here at PlayQonnect.
+  </p>
+  <img class="aboutimg" src="../static/img/Sport family.gif" alt="" />
+</div>
+<br />
+<br />
+
+<div id="features" class="features">
+  <h3>Features</h3>
+  <p>
+    ------------------------------------------------------------------------------------------------------------------------
+  </p>
+  <div class="feaflex">
+    <div class="feabox">
+      <h5 class="feahead">Discover Turfs</h5>
+      <p>
+        Dive into our extensive database of sports facilities, parks, and
+        recreational centers in your local area. From sprawling sports complexes
+        to hidden gems off the beaten path, you'll find everything you need to
+        fuel your sporting adventures.
+      </p>
+    </div>
+    <br />
+    <div class="feabox">
+      <h5 class="feahead">Organize Games</h5>
+      <p>
+        Take charge and become the mastermind behind your next sports event. Our
+        intuitive event management tools empower you to create, schedule, and
+        coordinate games with ease, allowing you to bring your sporting vision
+        to life.
+      </p>
+    </div>
+    <br />
+    <div class="feabox">
+      <h5 class="feahead">Join Existing Events</h5>
+      <p>
+        Looking to join a game or activity without the hassle of planning?
+        Explore our curated list of upcoming events and join fellow sports
+        enthusiasts for an unforgettable experience. Whether it's a friendly
+        match, a group hike, or a yoga session in the park, there's always
+        something happening in our community.
+      </p>
+    </div>
+    <br />
+    <div class="feabox">
+      <h5 class="feahead">Connect with Like-Minded Individuals</h5>
+      <p>
+        Forge new friendships and connections with individuals who share your
+        passion for sports and outdoor pursuits. Our platform provides a
+        welcoming space where you can engage in lively discussions, share tips
+        and advice, and find inspiration from fellow members of the community.
+      </p>
+    </div>
+    <br />
+    <div class="feabox">
+      <h5 class="feahead">Foster a Healthy Lifestyle</h5>
+      <p>
+        At PlayQonnect, we believe that sports and outdoor activities are more
+        than just hobbies – they're pathways to holistic well-being. By
+        promoting an active lifestyle and encouraging regular physical activity,
+        we empower our members to lead happier, healthier lives.
+      </p>
+    </div>
+  </div>
+</div>
+<br />
+<br />
+<div class="contact" id="contact">
+  <h3>Contact Developers</h3>
+  <p>
+    ------------------------------------------------------------------------------------------------------------------------
+  </p>
+  <div
+    class="visme_d"
+    data-title="Contact Us Contact Form"
+    data-url="g7qwn9yw-contact-us-contact-form"
+    data-domain="forms"
+    data-full-page="false"
+    data-min-height="500px"
+    data-form-id="36095"
+  ></div>
+  <script src="https://static-bundles.visme.co/forms/vismeforms-embed.js"></script>
+</div>
+<br />
+<footer class="footer">
+  <h3 class="footerhead">GTMS</h3>
+  <p class="footerp">
+    Developed by
+    <span style="color: yellow; font-weight: 500">Hisham </span>
+  </p>
+  <br />
+  <ul class="footerlist">
+    <li><a class="link" href="#">Home</a></li>
+    <li><a class="link" href="#about">About</a></li>
+    <li><a class="link" href="#features">Features</a></li>
+    <li><a class="link" href="#contact">Contact Us</a></li>
+  </ul>
+</footer>
+
+{% endblock body %}

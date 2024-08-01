@@ -1,0 +1,34 @@
+{% extends 'layout.html' %} {% block title %}Turf Reviews for {{ turf.turf_name
+}}{% endblock title %} {% block body %}
+<a
+  class="btn btn-primary"
+  style="margin: 0.5%"
+  href="{{ url_for('dashboard') }}"
+>
+  Back
+</a>
+<div class="secbody">
+  <h1 class="turfhead" style="margin-top: -2.5%">
+    Reviews for {{ turf.turf_name }}
+  </h1>
+  <br />
+  {% if reviews |length==0 %}
+  <div class="alert alert-dark" role="alert">
+    No reviews found!, write a review.
+  </div>
+
+  {% else %} {% for review in reviews %}
+  <div class="smallsec">
+    <div class="revname">{{review.user.username }}</div>
+    Rating: {{ review.rating }}⭐<br /><br />
+    <div class="revdesc">{{ review.review_text }}</div>
+  </div>
+  <br />
+  {% endfor %} {% endif %}
+  <a
+    class="btn btn-primary"
+    href="{{ url_for('write_review', turf_id=turf.id) }}"
+    >Write a Review</a
+  >
+</div>
+{% endblock body %}

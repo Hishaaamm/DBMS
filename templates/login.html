@@ -1,0 +1,33 @@
+{% extends 'layout.html' %} {% block title %} Login {% endblock title %} {%
+block head %} {{ super() }}
+<link
+  rel="stylesheet"
+  type="text/css"
+  href="{{ url_for('static', filename='css/style.css') }}"
+/>
+{% endblock head %} {% block body %}
+<div class="mainb1">
+  <h1 class="turfhead">Game and Turf Management System</h1>
+  <!-- <h2 class="turfhead">Login Page</h2> -->
+  <form method="POST" action="">
+    <div class="parent">
+      {{ form.hidden_tag() }}
+      <div class="c1">Username or Email: &nbsp;{{ form.username_email }}</div>
+      <br />
+      <div class="c1">
+        {{ form.password.label }} :
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;{{ form.password }}
+      </div>
+      <br />
+      
+      {{ form.submit }}
+    </div>
+    <!-- <img class="loginimg" src="../static/img/PNGBUY-Lionel-Messi-9.png" alt=""> -->
+  </form>
+  <br />
+  <a style="margin-left: 500px" href="{{ url_for('register') }}"
+    >Don't have an Account? Sign-up</a
+  >
+</div>
+{% endblock body %}
